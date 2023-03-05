@@ -1,5 +1,4 @@
 html {
-
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -10,19 +9,24 @@ html {
     font-family: 'Arial';
 }
 h1{
+    font-weight: 700;
     font-size: 36px;
+    line-height: 150%;
 }
 h6{
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
 }
 .container-navbar{
     background-color: #F1F3FF;
 }
 .navbar{
-    padding-left: 9%;
-    padding-right: 15%;
+    padding-left: 8.5%;
+    padding-right: 15.56%;
     /* padding-right: 249px; */
     padding-top: 20px;
+    
 }
 .navbar-brand{
     background-color:#0D28A6 ;
@@ -36,8 +40,7 @@ h6{
     display: flex;
     justify-content: flex-end;
 }
-.container-banner{
-    padding-left: 9%;
+.container-banner-all{
     background-color: #F1F3FF;
 }
 .bg-mobil{
@@ -45,6 +48,9 @@ h6{
     flex-direction: column;
     align-items: flex-end;
     justify-content: end;
+}
+.text-mobil{
+    padding-left: 9%;
 }
 
 .img-mobil{
@@ -57,7 +63,6 @@ h6{
 }
 
 .sewa-button{
-    margin-top: 24px;
     background-color: #5CB85F;
     color: white;
     font-weight: bold;
@@ -73,8 +78,74 @@ h6{
     line-height: 20px;
     color: white; */
 }
-@media screen and (max-width:708px){
-    .img-mobil{
-        height: auto;
+
+
+.container-promosi{
+    margin-top: 100px;
+}
+.container-our-service{
+    width: 468px;
+    height: 376px;
+}
+.image-promosi{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right:50px;
+}
+.text-our-service{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.text-our-service h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+.text-our-service h6{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+.top-services{
+    margin-top: 16px;
+}
+
+@media screen and (max-width:1000px){
+    .navbar, .text-mobil{
+        padding-left: 16px;
+        padding-right: 16px;
     }
+    .navbar{
+        padding-top: 24px;
+    }
+    .img-mobil{
+        width: 344.22px;
+        height: 199px;
+    }
+    .image-promosi img{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+        width: 252px;
+        height: 228px;
+    }
+    .container-promosi{
+        margin-top: 60px;
+    }
+    .text-our-service{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sewa-button{
+        margin-bottom: 24px;
+    }
+    .container-our-service{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
 }
