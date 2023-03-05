@@ -125,6 +125,12 @@ h6{
         width: 344.22px;
         height: 199px;
     }
+    /* .bg-mobil{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: end;
+    } */
     .image-promosi img{
         display: flex;
         justify-content: center;
@@ -134,6 +140,10 @@ h6{
     }
     .container-promosi{
         margin-top: 60px;
+    }
+    .image-promosi{
+        display: flex;
+        justify-content: center;
     }
     .text-our-service{
         display: flex;
