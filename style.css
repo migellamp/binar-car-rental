@@ -1,17 +1,27 @@
 html {
-    width: 100%;
-    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
 }
 *{
     font-family: 'Arial';
-}
+}   
+/* body{
+    width: 1440px; 
+	margin: 0 auto !important; 
+	float: none !important; 
+} */
 h1{
     font-weight: 700;
     font-size: 36px;
     line-height: 150%;
+}
+h5{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
 }
 h6{
     font-weight: 700;
@@ -19,14 +29,17 @@ h6{
     line-height: 20px;
 }
 .container-navbar{
+    padding-top: 100px;
     background-color: #F1F3FF;
 }
 .navbar{
-    padding-left: 8.5%;
-    padding-right: 15.56%;
+    width: 1440px;
+    margin: 0 auto !important; 
+	float: none !important; 
+    padding-left: 146px;
+    padding-right: 249px;
     /* padding-right: 249px; */
     padding-top: 20px;
-    
 }
 .navbar-brand{
     background-color:#0D28A6 ;
@@ -43,6 +56,11 @@ h6{
 .container-banner-all{
     background-color: #F1F3FF;
 }
+.container-isi-banner{
+    width: 1440px;
+    margin: 0 auto !important; 
+	float: none !important; 
+}
 .bg-mobil{
     display: flex;
     flex-direction: column;
@@ -50,17 +68,14 @@ h6{
     justify-content: end;
 }
 .text-mobil{
-    padding-left: 9%;
+    padding-left: 136px;
 }
-
 .img-mobil{
     width: 704px;
 }
-.container-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+/* .container-text{
+    float: left;
+} */
 
 .sewa-button{
     background-color: #5CB85F;
@@ -82,6 +97,7 @@ h6{
 
 .container-promosi{
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .container-our-service{
     width: 468px;
@@ -113,17 +129,62 @@ h6{
     margin-top: 16px;
 }
 
+.container-whyus{
+    padding-left: 136px;
+    padding-right: 136px;
+    width: 1440px;
+    margin: 0 auto !important; 
+	float: none !important; 
+}   
+.isi-card{
+    width: 468px;
+    height: 196px;
+    border: 1px solid #D0D0D0;
+    border-radius: 8px;
+    padding: 24px;
+    margin-right: 32px;
+}
+.card-whyus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-whyus{
+    padding-left: 0px;
+}
+.container-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 @media screen and (max-width:1000px){
-    .navbar, .text-mobil{
-        padding-left: 16px;
+    body{
+        width: 100%;
+        overflow-x:hidden;
+    }
+    .text-mobil{
+        padding-left: 6px;
         padding-right: 16px;
     }
     .navbar{
-        padding-top: 24px;
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
     }
     .img-mobil{
-        width: 344.22px;
-        height: 199px;
+        width: 360px;
+
+    }
+    .bg-mobil.col{
+        --bs-gutter-x: 0rem;
+    }
+    .bg-mobil{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
     }
     /* .bg-mobil{
         display: flex;
@@ -156,6 +217,9 @@ h6{
     .container-our-service{
         padding-left: 16px;
         padding-right: 16px;
+    }
+    .container-isi-banner{
+        width: 100%;
     }
     
 }
