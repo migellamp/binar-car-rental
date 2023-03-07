@@ -139,10 +139,11 @@ h6{
 }
 
 .container-card{
-    width: 1440px;
+    /* width: 1440px; */
     padding-left: 136px;
     padding-right: 136px;
-}   
+}
+
 
 .card-whyus{
     display: flex;
@@ -155,11 +156,11 @@ h6{
     border-radius: 8px;
     padding: 24px;
     margin-right: 32px;
+    width: 268px;
+    height: 196px;
+    float: left;
 }
 
-.container-card.col{
-    width: 10000px;
-}
 
 
 @media screen and (max-width:1000px){
@@ -178,7 +179,7 @@ h6{
         width: 100%;
     }
     .img-mobil{
-        width: 360px;
+        width: 340px;
 
     }
     .container-text.col{
@@ -234,13 +235,19 @@ h6{
         width: 100%;
         padding-left: 16px;
         padding-right: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .isi-card{
+        width: 328px;
+        height: 196px;
 
     }
-    .isi-card.col{
-        width:100%;
-        float:left;
-        display:inline;
-    }   
+    .text-whyus{
+        text-align: center;
+    }
     
     
     
